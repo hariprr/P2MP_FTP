@@ -1,0 +1,24 @@
+Instructions to run the programs
+The code for sender, receiver and a Makefile is provided in separate files.
+The code was developed on Ubuntu environment in C Language
+
+1. Copy the attached folder to a location on the test machines 
+   (both sender and receiver machines)
+   It contains two subdirectories “src” and “include”
+
+2. Change directory to “src”
+
+3. Copy the file you want to transfer into the same dir
+
+4. Run ./make >> to trigger makefile
+
+5. Start the receivers first with appropriate arguments for each fields as explained above
+
+	./p2mp <port#> <mss> <filename> <P> <server-ip>
+	Example: ./p2mp 7735 500 b.txt 0.05 10.139.60.228
+
+6. Start the sender program with appropriate arguments as explained earlier 
+	
+	./sender <port#> <mss> <filename> <server-1 server-2 …. server-n>
+	Example: ./sender 7735 500 socket_client.c 10.139.60.228 
+

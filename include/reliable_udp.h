@@ -1,0 +1,3 @@
+#define P2MP_SERVER_PORT "7735"
+#define INET_ADDRLEN 16
+#define MAXBUFLEN 1500
